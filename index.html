@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>E-Book</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="o.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body class="bg-white text-black">
+    <div class="flex">
+        <!-- Sidebar Navigation -->
+        <div class="bg-gray-100 action-container p-4">
+            <ul class="space-y-4">
+                <li><a href="cari.html" class="nav-link active"><i class="fas fa-search text-2xl"></i></a></li>
+                <li><a href="index.html" class="nav-link"><i class="fas fa-home text-2xl"></i></a></li>
+                <li><a href="profile.html" class="nav-link"><i class="fas fa-user text-2xl"></i></a></li>
+                <li><a href="store.html" class="nav-link"><i class="fas fa-store text-2xl"></i></a></li>
+            </ul>
+        </div>
+
+    <!-- Main Content -->
+    <div class="w-1/5 bg-gray-100 main-content border border-black p-4 shadow-md">
+        <h1 class="text-4xl font-bold text-brown-700 mb-8">E-BOOK</h1>
+           
+            <div class="mb-8">
+                <h2 class="text-xl font-bold mb-4">New</h2>
+                <!-- Komponen Buku -->
+                <!-- Komponen Buku dengan Link -->
+                <a href="bukuSiPutih.html"  class="flex flex-col items-center border border-gray-300 rounded-lg p-4 shadow-md w-40 hover:shadow-lg transition duration-300">
+                    <img alt="Cover of the book Si Putih!" class="mb-2 w-24 h-36 object-cover rounded-md" 
+                        src="Siputih.jpg"/>
+                    <p class="text-left font-medium">Si Putih!<br/><span class="text-gray-500">23 Jan 2025</span></p>
+                </a>
+            </div>
+
+            <div>
+                <h2 class="text-xl font-bold mb-4">Trending</h2>
+                <!-- Komponen Buku -->
+                <!-- Komponen Buku dengan Link -->
+                <a href="bukuSagaras.html"class="flex flex-col items-center border border-gray-300 rounded-lg p-4 shadow-md w-40 hover:shadow-lg transition duration-300">
+                    <img alt="Cover of the book Sagaras" class="mb-2 w-24 h-36 object-cover rounded-md" 
+                        src="Sagaras.jpg"/>
+                    <p class="text-center font-medium">Sagaras<br/><span class="text-gray-500">14 Nov 2024</span></p>
+                </a>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="w-4/5 p-8">
+            <!-- Buku 1 -->
+            <div class="flex flex-row-reverse items-start mb-8 border border-gray-300 rounded-lg p-4 shadow-md">
+                <img class="w-1/4 h-48 object-cover ml-4 rounded-md" 
+                    src="Siputih.jpg" 
+                    alt="Cover of Cinta Dan Luka"/>
+                <div class="w-3/4">
+                    <h1 class="text-3xl font-bold mb-2">Si Putih!</h1>
+                    <p class="text-gray-600 mb-2">2025 • 376 Halaman <span class="ml-2"><i class="fas fa-hd"></i></span></p>
+                    <p class="mb-4">di Klan Polaris saat pandemi level 10 menyerang. Seorang anak bernama N-ou, yang berusia dua belas tahun, terinfeksi virus mematikan dan terpaksa berpisah dari orang tuanya selama evakuasi. Ia ditinggalkan di Kota E-um yang telah hancur akibat pandemi.</p>
+                    <p class="mb-4">Di tengah kesendiriannya, N-ou menemukan seekor anak kucing terjepit di bawah reruntuhan gedung dan menyelamatkannya. Kucing itu diberi nama Si Putih. Sejak saat itu, mereka menjalin persahabatan erat dan bersama-sama menjelajahi Klan Polaris untuk mencari cara menembus dinding pembatas wilayah evakuasi.</p>
+                    <div class="flex items-center">
+                        <a href="bukuSiPutih.html"><button class="action-button"><i class="fas fa-book-open mr-2"></i> Membaca</button></a>
+                        <label for="like1" class="cursor-pointer">
+                            <input type="radio" id="like1" name="opsi1" value="hati" class="hidden"/>
+                            <i class="fas fa-heart text-gray-400 hover:text-red-500 transition duration-300"></i>
+                        </label>
+                        <label for="hati">10k</label>           
+                        <button class="action-button"><i class="fas fa-trash-alt mr-2"></i>Hapus</button>
+                        <button class="action-button"><i class="fas fa-bookmark mr-2"></i>Simpan</button>
+                        <span class="ml-4"><i class="fa fa-eye"></i> 32k</span>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Buku 2 -->
+            <div class="flex flex-row-reverse items-start border border-gray-300 rounded-lg p-4 shadow-md">
+                <img class="w-1/4 h-48 object-cover ml-4 rounded-md" 
+                    src="Sagaras.jpg" 
+                    alt="Cover of Ternyata Tanpamu"/>
+                <div class="w-3/4">
+                    <h1 class="text-3xl font-bold mb-2">Sagaras</h1>
+                    <p class="text-gray-600 mb-2">2024 • 384 Halaman <span class="ml-2"><i class="fas fa-hd"></i></span></p>
+                    <p class="mb-4">Ali, Raib, dan Seli. Dalam buku ini, fokus cerita adalah upaya Ali mengungkap misteri keberadaan orang tuanya yang hilang.</p>
+                    <p class="mb-4">Setelah menemukan petunjuk penting, Ali memutuskan untuk pergi ke Klan SagaraS, tempat terakhir di mana jejak orang tuanya terdeteksi. Raib, Seli, dan Master Batozar tidak membiarkan Ali pergi sendiri dan memutuskan untuk menemaninya dalam perjalanan berbahaya tersebut</p>
+                    <p class="text-blue-500 mb-4">Fantasi, Petualangan, Pertemanan, Diri Minteri</p>
+                    <div class="flex items-center">
+                        <a href="bukuSagaras.html"><button class="action-button"><i class="fas fa-book-open mr-2"></i> Membaca</button></a>
+                        <label for="like2" class="cursor-pointer">
+                            <input type="radio" id="like2" name="opsi2" value="hati" class="hidden"/>
+                            <i class="fas fa-heart text-gray-400 hover:text-red-500 transition duration-300"></i>
+                        </label>
+                        <label for="hati">10k</label>
+                        <button class="action-button"><i class="fas fa-trash-alt mr-2"></i>Hapus</button>
+                        <button class="action-button"><i class="fas fa-bookmark mr-2"></i>Simpan</button>
+                        <span class="ml-4"><i class="fa fa-eye"></i> 20k</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

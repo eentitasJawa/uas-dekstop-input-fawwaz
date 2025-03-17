@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Book Store</title>
+    
+    <!-- External Libraries -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="toko.css">
+</head>
+
+<body>
+    <div class="flex">
+        <!-- Sidebar Navigation -->
+        <div class="action-container">
+            <h1 class="text-3xl font-bold text-brown-700 mb-5">E-BOOK</h1>
+            <ul class="space-y-4">
+                <li><a href="cari.html" class="nav-link active"><i class="fas fa-search text-2xl"></i> Search</a></li>
+                <li><a href="index.html" class="nav-link"><i class="fas fa-home text-2xl"></i> Home</a></li>
+                <li><a href="login.html" class="nav-link"><i class="fas fa-user text-2xl"></i> Login</a></li>
+                <li><a href="toko.html" class="nav-link"><i class="fas fa-store text-2xl"></i> Toko</a></li>
+            </ul>
+        </div>
+    </div>
+
+        <!-- Main Content -->
+        <div class="container">
+            <header>
+                <h1>Toko</h1>
+            </header>
+
+            <section class="input-section">
+                <label for="bukuInput">Judul</label>
+                <input type="text" id="bukuInput" placeholder="Masukkan Judul Buku">
+            </section>
+
+            <section id="productList"></section>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Gambar</th>
+                        <th>Nama</th>
+                        <th>Harga</th>
+                        <th>Jumlah</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody id="cartItems"></tbody>
+            </table>
+
+            <div class="total" id="total">Total: Rp 0</div>
+
+            <section>
+                <label for="amountPaid">Jumlah Pembayaran:</label>
+                <input type="number" id="amountPaid" placeholder="Masukkan jumlah pembayaran">
+                <button onclick="processPayment()">Proses Pembayaran</button>
+            </section>
+
+            <button onclick="resetCart()">Reset Keranjang</button>
+            <div class="message" id="message"></div>
+        </div>
+    
+    
+    <script src="toko.js"></script>
+</body>
+</html>
